@@ -12,7 +12,7 @@ class Settings:
     ACCESS_TOKEN_EXPIRE_MINUTES: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "60"))
     # Both localhost and 127.0.0.1 are included by default since browsers
     # treat them as different origins even though they're the same machine.
-    CORS_ORIGINS: list = os.getenv("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",")
+    CORS_ORIGINS: list = os.getenv("CORS_ORIGINS", "https://electrical-advisor-frontend.vercel.app/").split(",")
 
     # Optional: when set, the Advisor uses Claude to understand free-text
     # problem descriptions. When empty, it falls back to keyword matching -
