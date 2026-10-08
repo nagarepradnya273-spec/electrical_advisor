@@ -1,0 +1,3 @@
+# Only needed if you switch DATABASE_URL to postgresql://... in .env
+# (not required for local SQLite development)
+psycopg2-binary>=2.9.11,<3.0.0
